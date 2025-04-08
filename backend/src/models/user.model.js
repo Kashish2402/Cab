@@ -5,13 +5,8 @@ import jwt from "jsonwebtoken";
 const userSchema = new Schema(
   {
     fullName: {
-      firstName: {
-        type: String,
-        required: true,
-      },
-      lastName: {
-        type: String,
-      },
+      type: String,
+      required: true,
     },
 
     username: {
@@ -19,6 +14,12 @@ const userSchema = new Schema(
       required: true,
       unique: true,
       lowercase: true,
+    },
+
+    age: {
+      type: Number,
+      required: true,
+      min: 18,
     },
 
     email: {
@@ -51,7 +52,7 @@ const userSchema = new Schema(
 );
 
 userSchema.pre("save", async function (next) {
-  if (!this.isModified("password")) return;
+  if (!this.isModified("password")) return next();
 
   this.password = await bcrypt.hash(this.password, 10);
   next();
@@ -66,7 +67,6 @@ userSchema.methods.generateAccessToken = async function () {
     {
       _id: this._id,
       fullName: this.fullName,
-      username:this.username,
       email: this.email,
     },
     process.env.ACCESS_TOKEN_SECRET,
