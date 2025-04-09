@@ -26,6 +26,8 @@ const generateAccessAndRefreshToken = async (userId) => {
 const signup = asyncHandler(async (req, res, next) => {
   const { fullName, username, email, age, password } = req.body;
 
+  console.log("Signup Called")
+
   if (!(fullName && username && email && age && password)) {
     return next(
       new ApiError(400, "Fullname, username, email,password, age required")
