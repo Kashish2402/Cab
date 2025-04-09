@@ -26,8 +26,6 @@ const generateAccessAndRefreshToken = async (userId) => {
 const signup = asyncHandler(async (req, res, next) => {
   const { fullName, username, email, age, password } = req.body;
 
-  console.log("Signup Called")
-
   if (!(fullName && username && email && age && password)) {
     return next(
       new ApiError(400, "Fullname, username, email,password, age required")
@@ -49,7 +47,7 @@ const signup = asyncHandler(async (req, res, next) => {
   if (!createUser)
     return next(new ApiError(500, "Failed to create user account"));
 
-  const user = await User.findById(req.user?._id).select(
+  const user = await User.findById(createUser?._id).select(
     "-password -refreshToken"
   );
 
@@ -89,7 +87,7 @@ const login = asyncHandler(async (req, res, next) => {
 
   if (!checkPassword) return next(new ApiError(400, "Wrong Password !!"));
 
-  const loggedInUser = await User.findById(req.user?._id).select(
+  const loggedInUser = await User.findById(user?._id).select(
     "-password -refreshToken"
   );
 
