@@ -1,5 +1,8 @@
-import { ApiError } from "./ApiError.js";
 import { v2 as cloudinary } from "cloudinary";
+import fs from "fs";
+import dotenv from "dotenv";
+dotenv.config({ path: "./.env" });
+
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_NAME,
@@ -9,10 +12,12 @@ cloudinary.config({
 
 export const uploadOnCloudinary = async (localFilePath) => {
   try {
-    if (!localFilePath) return next(new ApiError(404, "File Not Found"));
+    if (!localFilePath) {
+      throw  new Error("Couldn't find file");
+    }
 
     const response = await cloudinary.uploader.upload(localFilePath, {
-      resource_type: auto,
+      resource_type: "auto",
     });
     console.log(`FILE SUCCESSFULLY UPLOADED ON CLOUDINARY`);
 

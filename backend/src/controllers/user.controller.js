@@ -2,6 +2,7 @@ import { asyncHandler } from "../utils/asyncHandler.js";
 import { ApiError } from "../utils/ApiError.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 import { User } from "../models/user.model.js";
+import { uploadOnCloudinary } from "../utils/cloudinary.js";
 
 const generateAccessAndRefreshToken = async (userId) => {
   try {
@@ -184,8 +185,9 @@ const changeUserDetails = asyncHandler(async (req, res, next) => {
 });
 
 const updateAvatar = asyncHandler(async (req, res, next) => {
-  const { avatar } = req.file.path;
+  const  avatar  = req.file?.path;
 
+  console.log()
   const avatarURL = await uploadOnCloudinary(avatar);
 
   if (!avatarURL)
@@ -199,7 +201,7 @@ const updateAvatar = asyncHandler(async (req, res, next) => {
   const updatedUser = await User.findByIdAndUpdate(
     req.user?._id,
     {
-      avatar: avatarURL,
+      avatar: avatarURL.url,
     },
     { new: true }
   ).select("-password -refreshToken");
