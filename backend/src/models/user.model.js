@@ -34,6 +34,21 @@ const userSchema = new Schema(
       required: true,
     },
 
+    mobileNumber: {
+      type: String,
+    },
+
+    state: {
+      type: String,
+      required: true,
+    },
+    
+    role: {
+      type: String,
+      enum: ["leader", "user"],
+      default: "user",
+    },
+
     avatar: {
       type: String,
     },
