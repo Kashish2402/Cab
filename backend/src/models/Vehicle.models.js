@@ -10,6 +10,9 @@ const vehicleSchema = new Schema(
       type: String,
       enum: ["4-wheeler", "2-wheeler"],
       default: "4-wheeler",
+    },
+    vehicleImage: {
+      type: String,
       required: true,
     },
     licenceNumber: {
@@ -23,11 +26,14 @@ const vehicleSchema = new Schema(
     },
     vehicleName: {
       type: String,
-      required: true,
     },
     vehicleModel: {
       type: String,
-      required: true,
+    },
+    vehicleStatus: {
+      type: String,
+      enum: ["Active", "Inactive"],
+      default: "Active",
     },
   },
   {
@@ -35,5 +41,4 @@ const vehicleSchema = new Schema(
   }
 );
 
-
-export const VEHICLE = mongoose.model("VEHICLE", vehicleSchema);
+export const Vehicle = mongoose.model("Vehicle", vehicleSchema);
