@@ -19,9 +19,11 @@ app.use(cookieParser())
 
 import userRouter from './routes/user.routes.js'
 import vehicleRouter from "./routes/vehicle.routes.js"
+import leaderRoutes from "./routes/leader.routes.js"
 
 app.use("/api/v1/users",userRouter)
 app.use("/api/v1/vehicles",vehicleRouter)
+app.use("/api/v1/leaders",leaderRoutes)
 
 app.use(errorHandler)
 
