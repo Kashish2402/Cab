@@ -18,6 +18,10 @@ const leaderSchema = new Schema(
       enum: ["active", "inactive"],
       default: "active",
     },
+    location:{
+      type: String,
+      required: true
+    }
   },
   {
     timestamps: true,
