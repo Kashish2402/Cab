@@ -9,7 +9,8 @@ const authSlice=createSlice({
         isLoggingIn:false,
         error:null
     },
-    reducers:{}
+    reducers:{},
+    
 })
 
 export default authSlice.reducer
