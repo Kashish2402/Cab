@@ -27,7 +27,7 @@ function Banner1() {
         <div className="flex flex-col items-center md:items-start gap-3 w-full max-w-md md:ml-20">
           <h1 className="text-4xl md:text-5xl font-bold text-white/80 font-['Montserrat'] text-center md:text-left">
             Your Smarter <br />
-            Way to Ride...
+            Way to <span className="text-gray-500">"Ride"</span>
           </h1>
 
           <p className="text-gray-400/80 text-center md:text-left text-sm italic">
@@ -38,7 +38,7 @@ function Banner1() {
 
           <div className="w-[70%] md:w-full flex gap-3">
             <button className="w-1/2 border rounded-2xl py-2 border-white font-medium text-white cursor-pointer mt-6 flex items-center justify-center gap-3 hover:bg-white/70 hover:text-black transition-all">
-              Book a Ride <ArrowRight />
+              Book a Ride <ArrowRight size={20}/>
             </button>
 
             <button className="w-1/2 border rounded-2xl py-2 border-white bg-white/70 text-black hover:text-white hover:bg-transparent cursor-pointer mt-6 flex items-center justify-center gap-3 transition-all font-medium">

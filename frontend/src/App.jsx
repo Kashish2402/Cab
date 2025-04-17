@@ -8,7 +8,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="h-screen w-full font-[Poppins] bg-[#121212]">
+    <div className="w-full font-[Poppins] bg-[#121212]">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
