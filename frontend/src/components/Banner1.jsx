@@ -33,7 +33,7 @@ function Banner1() {
           <p className="text-gray-400/80 text-center md:text-left text-sm italic">
             Get best deals on your next ride!
             <br />
-            Grab the deal fast and get up to 25% OFF on your first ride.
+            Grab the deal and get up to 25% OFF on your first ride.
           </p>
 
           <div className="w-[70%] md:w-full flex gap-3">

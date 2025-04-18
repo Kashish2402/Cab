@@ -8,7 +8,7 @@ function Description() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 w-[80%] mx-auto gap-4 mt-10">
         <div className='bg-[#2e2e2e9f] w-full rounded-2xl flex items-center flex-col lg:w-[80%] p-3'>
-        <div className='w-50'>
+        <div className='w-50 '>
             <img src={CarSearchIcon} alt="" />
         </div>
 
@@ -19,7 +19,7 @@ function Description() {
         </div>
         </div>
 
-        <div className='bg-[#2e2e2e9f] w-full rounded-2xl flex items-center flex-col lg:w-[80%] p-3'>
+        <div className='bg-[rgba(46,46,46,0.62)] w-full rounded-2xl flex items-center flex-col lg:w-[80%] p-3'>
         <div className='w-50'>
             <img src={CarSearchIcon} alt="" />
         </div>

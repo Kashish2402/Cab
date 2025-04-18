@@ -1,5 +1,5 @@
 import Banner1img from './Banner1img.png';
-import CarSearchIcon from "./Car_search_icon.webp"
+import CarSearchIcon from "./searchARide.png"
 
 export{
     Banner1img,
