@@ -28,7 +28,7 @@ function Navbar() {
   }
 
   return (
-    <div className="p-6 py-5  bg-gradient-to-br from-[black] to-gray-950 drop-shadow-lg border-b shadow-black">
+    <div className="p-4 py-5  bg-gradient-to-br from-[black] to-gray-950 drop-shadow-lg border-b shadow-black">
       <div className="w-full flex items-center justify-between">
         {/* LOGO */}
         <div className='relative font-["Great_Vibes"] text-3xl w-fit'>

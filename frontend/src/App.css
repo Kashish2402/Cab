@@ -6,11 +6,22 @@
 .work::before{
     content: "How Carpooling works ?";
     position: absolute;
-    height:100%;
-    width:100%;
-    top:1.5px;
+    /* top:1.5px; */
+    left:0;
+    translate: 2px 2px;
     color: transparent;
-    left:2px;
     -webkit-text-stroke:2px rgba(128, 128, 128, 0.5);
     z-index: -1;
+}
+
+.choose::before{
+    content: "Why Choose Us ?";
+    position: absolute;
+    /* top:1.5px; */
+    left:0;
+    translate: 2px 2px;
+    color: transparent;
+    -webkit-text-stroke:2px rgba(128, 128, 128, 0.5);
+    z-index: -1;
+
 }

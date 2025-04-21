@@ -14,11 +14,11 @@ function Banner1() {
         <div className="absolute h-25 w-25 rounded-b-full bg-[#050505b7] -top-5 left-[280px] z-0 opacity-55"></div>
         <div className="absolute h-15 w-25 rounded-b-full bg-[#050505b7] -top-5 left-[380px] z-0 opacity-55"></div>
 
-        <div className="absolute h-55 w-25 rounded-t-full bg-[#050505b7] -bottom-5 -right-5 z-0 opacity-55"></div>
-        <div className="absolute h-45 w-25 rounded-t-full bg-[#050505b7] -bottom-5 right-[80px] z-0 opacity-55"></div>
-        <div className="absolute h-35 w-25 rounded-t-full bg-[#050505b7] -bottom-5 right-[180px] z-0 opacity-55"></div>
-        <div className="absolute h-25 w-25 rounded-t-full bg-[#050505b7] -bottom-5 right-[280px] z-0 opacity-55"></div>
-        <div className="absolute h-15 w-25 rounded-t-full bg-[#050505b7] -bottom-5 right-[380px] z-0 opacity-55"></div>
+        <div className="absolute h-55 w-25 rounded-t-full bg-[#050505b7] -bottom-5 right-0.5 z-0 opacity-55"></div>
+        <div className="absolute h-45 w-25 rounded-t-full bg-[#050505b7] -bottom-5 right-[101px] z-0 opacity-55"></div>
+        <div className="absolute h-35 w-25 rounded-t-full bg-[#050505b7] -bottom-5 right-[201px] z-0 opacity-55"></div>
+        <div className="absolute h-25 w-25 rounded-t-full bg-[#050505b7] -bottom-5 right-[301px] z-0 opacity-55"></div>
+        <div className="absolute h-15 w-25 rounded-t-full bg-[#050505b7] -bottom-5 right-[399px] z-0 opacity-55"></div>
       </div>
 
       <div className="w-full md:w-1/2 order-2 md:order-1 flex justify-center md:justify-start z-5 mb-8">

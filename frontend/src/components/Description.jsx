@@ -4,7 +4,7 @@ import { CarSearchIcon } from '../assets'
 function Description() {
   return (
     <div className="w-full flex items-center flex-col justify-center my-20">
-      <h1 className="work font-bold text-white/80 font-['Montserrat'] text-4xl relative z-1 mb-10">How Carpooling works ?</h1>
+      <div className="work mx-auto font-bold text-white/80 font-['Montserrat'] text-4xl relative z-1 mb-10 text-center">How Carpooling works ?</div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 w-[80%] mx-auto gap-4 mt-10">
         <div className='bg-[#2e2e2e9f] w-full rounded-2xl flex items-center flex-col lg:w-[80%] p-3'>

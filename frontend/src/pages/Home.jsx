@@ -8,7 +8,7 @@ function Home() {
     <div>
       <Slider />
       <Description />
-      <Features />
+      <Features/>
     </div>
   );
 }
