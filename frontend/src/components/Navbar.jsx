@@ -45,7 +45,7 @@ function Navbar() {
             <button className="text-white/90 text-[15px] cursor-pointer border-none" onClick={()=>navigate('/login')}>
               LogIn
             </button>
-            <button className="cursor-pointer bg-white/60 px-3 py-1 rounded-xl border-2 font-medium text-[15px] hover:text-white border-transparent hover:bg-transparent hover:border-white/50 transition-all ease-in duration-200" onClick={()=>navigate('/signUp')}>
+            <button className="cursor-pointer bg-white/90 px-3 py-1 rounded-xl border-2 font-semibold text-[15px] hover:text-white border-transparent hover:bg-transparent hover:border-white/50 transition-all ease-in duration-200" onClick={()=>navigate('/signUp')}>
               SignUp
             </button>
           </div>

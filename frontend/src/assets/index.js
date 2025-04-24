@@ -5,6 +5,13 @@ import searchARide from "./searchARide.png"
 import safe from "./safe.png"
 import ecofriendly from "./Eco-friendly.png"
 import routesImg from "./Routes.png"
+import RideImage from "./RideImage.png"
+import RideSave from "./RidenSave.png"
+import leaderConnect from "./leaderConnect.png"
+import Carpool from "./CarpoolImage.png"
+import localBuddy from "./localBuddyimg.png"
+import Rentals from "./Rentals.png"
+import AdvanceRide from "./AdvanceRide.png"
 
 export{
     Banner1img,
@@ -13,5 +20,12 @@ export{
     searchARide,
     safe,
     ecofriendly,
-    routesImg
+    routesImg,
+    RideImage,
+    RideSave,
+    leaderConnect,
+    Carpool,
+    localBuddy,
+    Rentals,
+    AdvanceRide
 }
