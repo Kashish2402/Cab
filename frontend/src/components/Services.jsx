@@ -1,5 +1,11 @@
 import React from "react";
-import { AdvanceRide, Carpool, localBuddy, Rentals, RideImage } from "../assets";
+import {
+  AdvanceRide,
+  Carpool,
+  localBuddy,
+  Rentals,
+  RideImage,
+} from "../assets";
 
 function Services() {
   return (
@@ -99,8 +105,8 @@ function Services() {
         </div>
       </div>
 
- {/* Reserve Div */}
- <div className="w-[80%] lg:w-[60%] mx-auto flex items-center justify-between flex-col md:flex-row border border-gray-600/20 rounded-2xl p-[10px] md:border-transparent md:shadow-2xl mb-10 md:px-10 md:py-5">
+      {/* Reserve Div */}
+      <div className="w-[80%] lg:w-[60%] mx-auto flex items-center justify-between flex-col md:flex-row border border-gray-600/20 rounded-2xl p-[10px] md:border-transparent md:shadow-2xl mb-10 md:px-10 md:py-5">
         <div className="h-42 w-42 relative flex  items-center justify-center ">
           <img
             src={AdvanceRide}
@@ -112,7 +118,9 @@ function Services() {
         </div>
 
         <div className="max-auto md:w-1/2 flex flex-col gap-3 items-center md:items-start">
-          <h1 className="text-3xl text-white/80 font-medium">Advance ride booking</h1>
+          <h1 className="text-3xl text-white/80 font-medium">
+            Advance ride booking
+          </h1>
           <p className="text-white/40 text-center md:text-left">
             Book your ride in advance to avoid last minute delays.
           </p>
@@ -122,7 +130,6 @@ function Services() {
           </button>
         </div>
       </div>
-      
     </div>
   );
 }
